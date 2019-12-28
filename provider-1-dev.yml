@@ -1,6 +1,17 @@
 server:
   port: 9002
   
-spring:  application:    name: provider  
+spring:
+  application:
+    name: provider  
     
-eureka:  client:    service-url:      defaultZone: http://eureka1:2001/eureka     
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka1:2001/eureka
+      
+management:
+  endpoint:
+    web:
+      exposure:
+        include: refresh           
